@@ -56,15 +56,39 @@
 		F7839AFE27E0A85000C3111D /* Spotify Clone Attempt */ = {
 			isa = PBXGroup;
 			children = (
+				F7839B1327E0BBD000C3111D /* Models */,
+				F7839B1427E0BBE500C3111D /* Views */,
+				F7839B1527E0BBED00C3111D /* Controllers */,
 				F7839AFF27E0A85000C3111D /* AppDelegate.swift */,
 				F7839B0127E0A85000C3111D /* SceneDelegate.swift */,
-				F7839B0327E0A85000C3111D /* ViewController.swift */,
-				F7839B0527E0A85000C3111D /* Main.storyboard */,
 				F7839B0827E0A85200C3111D /* Assets.xcassets */,
 				F7839B0A27E0A85200C3111D /* LaunchScreen.storyboard */,
 				F7839B0D27E0A85200C3111D /* Info.plist */,
 			);
 			path = "Spotify Clone Attempt";
+			sourceTree = "<group>";
+		};
+		F7839B1327E0BBD000C3111D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F7839B1427E0BBE500C3111D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F7839B0527E0A85000C3111D /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F7839B1527E0BBED00C3111D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F7839B0327E0A85000C3111D /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
