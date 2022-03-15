@@ -10,7 +10,6 @@
         <!--Home-->
         <scene sceneID="SNr-ne-WHd">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YFs-YC-F40" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oDY-cn-5Cr" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="nE3-Qg-aKD"/>
                     <toolbarItems/>
@@ -30,13 +29,14 @@
                         <segue destination="azI-Fp-Ijj" kind="relationship" relationship="rootViewController" id="wVc-gh-9DO"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YFs-YC-F40" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="812"/>
         </scene>
         <!--Good Morning-->
         <scene sceneID="X8P-Cq-Fgn">
             <objects>
-                <viewController id="azI-Fp-Ijj" sceneMemberID="viewController">
+                <viewController id="azI-Fp-Ijj" customClass="HomeViewController" customModule="Spotify_Clone_Attempt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7KQ-hA-Ndl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,7 +52,7 @@
         <!--Your Library-->
         <scene sceneID="de2-qL-le0">
             <objects>
-                <viewController id="7i3-a3-Eb0" sceneMemberID="viewController">
+                <viewController id="7i3-a3-Eb0" customClass="LibraryViewController" customModule="Spotify_Clone_Attempt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hee-ri-nte">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,7 +68,7 @@
         <!--Search-->
         <scene sceneID="WIQ-S4-50i">
             <objects>
-                <viewController id="lES-yP-TTF" sceneMemberID="viewController">
+                <viewController id="lES-yP-TTF" customClass="SearchViewController" customModule="Spotify_Clone_Attempt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qjJ-pY-g61">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -84,7 +84,6 @@
         <!--Your Library-->
         <scene sceneID="qvi-LU-xtg">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="163-bD-uWm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="km9-qy-bGC" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Your Library" image="books.vertical" catalog="system" selectedImage="books.vertical.fill" id="GnB-g7-g8Z"/>
                     <toolbarItems/>
@@ -104,13 +103,13 @@
                         <segue destination="7i3-a3-Eb0" kind="relationship" relationship="rootViewController" id="iTI-Pd-zvW"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="163-bD-uWm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1749" y="812"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JcA-D3-lRr">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BuU-4U-1KO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kma-92-QJO" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="search" id="NY6-f8-TMy"/>
                     <toolbarItems/>
@@ -130,6 +129,7 @@
                         <segue destination="lES-yP-TTF" kind="relationship" relationship="rootViewController" id="rKg-Ho-qAy"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BuU-4U-1KO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="929" y="812"/>
         </scene>
@@ -140,6 +140,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="rKn-WF-MVf"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xzz-Bw-bVQ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		F7839B0027E0A85000C3111D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7839AFF27E0A85000C3111D /* AppDelegate.swift */; };
 		F7839B0227E0A85000C3111D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7839B0127E0A85000C3111D /* SceneDelegate.swift */; };
-		F7839B0427E0A85000C3111D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7839B0327E0A85000C3111D /* ViewController.swift */; };
+		F7839B0427E0A85000C3111D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7839B0327E0A85000C3111D /* HomeViewController.swift */; };
 		F7839B0727E0A85000C3111D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7839B0527E0A85000C3111D /* Main.storyboard */; };
 		F7839B0927E0A85200C3111D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7839B0827E0A85200C3111D /* Assets.xcassets */; };
 		F7839B0C27E0A85200C3111D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7839B0A27E0A85200C3111D /* LaunchScreen.storyboard */; };
+		F7839B1727E0BF4F00C3111D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7839B1627E0BF4F00C3111D /* SearchViewController.swift */; };
+		F7839B1927E0BF9C00C3111D /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7839B1827E0BF9C00C3111D /* LibraryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F7839AFC27E0A85000C3111D /* Spotify Clone Attempt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spotify Clone Attempt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7839AFF27E0A85000C3111D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7839B0127E0A85000C3111D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F7839B0327E0A85000C3111D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7839B0327E0A85000C3111D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F7839B0627E0A85000C3111D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7839B0827E0A85200C3111D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7839B0B27E0A85200C3111D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7839B0D27E0A85200C3111D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7839B1627E0BF4F00C3111D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		F7839B1827E0BF9C00C3111D /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +90,9 @@
 		F7839B1527E0BBED00C3111D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F7839B0327E0A85000C3111D /* ViewController.swift */,
+				F7839B0327E0A85000C3111D /* HomeViewController.swift */,
+				F7839B1627E0BF4F00C3111D /* SearchViewController.swift */,
+				F7839B1827E0BF9C00C3111D /* LibraryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -162,8 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7839B0427E0A85000C3111D /* ViewController.swift in Sources */,
+				F7839B0427E0A85000C3111D /* HomeViewController.swift in Sources */,
+				F7839B1927E0BF9C00C3111D /* LibraryViewController.swift in Sources */,
 				F7839B0027E0A85000C3111D /* AppDelegate.swift in Sources */,
+				F7839B1727E0BF4F00C3111D /* SearchViewController.swift in Sources */,
 				F7839B0227E0A85000C3111D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
