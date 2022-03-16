@@ -13,10 +13,9 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oDY-cn-5Cr" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="nE3-Qg-aKD"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="6bf-xn-yGn">
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" barStyle="black" largeTitles="YES" id="6bf-xn-yGn">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -33,21 +32,63 @@
             </objects>
             <point key="canvasLocation" x="20" y="812"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Test-->
         <scene sceneID="X8P-Cq-Fgn">
             <objects>
                 <viewController id="azI-Fp-Ijj" customClass="HomeViewController" customModule="Spotify_Clone_Attempt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7KQ-hA-Ndl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCh-P8-aHF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1BI-Qo-DpJ" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="953.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5v-ea-cce">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="953.5"/>
+                                                <mutableString key="text">LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="u5v-ea-cce" firstAttribute="leading" secondItem="1BI-Qo-DpJ" secondAttribute="leading" id="7wz-Dq-Dfe"/>
+                                            <constraint firstAttribute="trailing" secondItem="u5v-ea-cce" secondAttribute="trailing" id="HhU-P0-sKS"/>
+                                            <constraint firstItem="u5v-ea-cce" firstAttribute="top" secondItem="1BI-Qo-DpJ" secondAttribute="top" id="squ-3Y-pQa"/>
+                                            <constraint firstAttribute="bottom" secondItem="u5v-ea-cce" secondAttribute="bottom" id="wgC-tl-9lW"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="1BI-Qo-DpJ" firstAttribute="bottom" secondItem="8dx-uA-2QE" secondAttribute="bottom" id="Grw-Cn-CI6"/>
+                                    <constraint firstItem="1BI-Qo-DpJ" firstAttribute="trailing" secondItem="8dx-uA-2QE" secondAttribute="trailing" id="aSN-sl-g6T"/>
+                                    <constraint firstItem="1BI-Qo-DpJ" firstAttribute="leading" secondItem="8dx-uA-2QE" secondAttribute="leading" id="f6S-OV-Nhj"/>
+                                    <constraint firstItem="1BI-Qo-DpJ" firstAttribute="top" secondItem="8dx-uA-2QE" secondAttribute="top" id="h6S-jf-Rdd"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="8dx-uA-2QE"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="S51-5e-wpC"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="EMP-9h-KdV"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1BI-Qo-DpJ" firstAttribute="width" secondItem="7KQ-hA-Ndl" secondAttribute="width" id="6Tc-GA-NzY"/>
+                            <constraint firstItem="tCh-P8-aHF" firstAttribute="trailing" secondItem="EMP-9h-KdV" secondAttribute="trailing" id="Gcw-Ld-4RU"/>
+                            <constraint firstItem="tCh-P8-aHF" firstAttribute="top" secondItem="7KQ-hA-Ndl" secondAttribute="top" id="fbT-N3-jYB"/>
+                            <constraint firstItem="tCh-P8-aHF" firstAttribute="bottom" secondItem="EMP-9h-KdV" secondAttribute="bottom" id="nPK-K0-9Pk"/>
+                            <constraint firstItem="tCh-P8-aHF" firstAttribute="leading" secondItem="EMP-9h-KdV" secondAttribute="leading" id="zP6-6s-YgM"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="qvL-ZW-2Nk"/>
+                    <navigationItem key="navigationItem" title="Test" id="qvL-ZW-2Nk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FN0-Xt-Kbe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10" y="1550"/>
+            <point key="canvasLocation" x="8.6956521739130448" y="1549.5535714285713"/>
         </scene>
         <!--Library View Controller-->
         <scene sceneID="de2-qL-le0">
@@ -65,7 +106,7 @@
             </objects>
             <point key="canvasLocation" x="1748" y="1550"/>
         </scene>
-        <!--Search-->
+        <!--Search View Controller-->
         <scene sceneID="WIQ-S4-50i">
             <objects>
                 <viewController id="lES-yP-TTF" customClass="SearchViewController" customModule="Spotify_Clone_Attempt" customModuleProvider="target" sceneMemberID="viewController">
@@ -75,7 +116,7 @@
                         <viewLayoutGuide key="safeArea" id="r6c-Xc-cDn"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Search" id="VVk-wf-taI"/>
+                    <navigationItem key="navigationItem" id="VVk-wf-taI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vdA-5N-pj1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -87,7 +128,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="km9-qy-bGC" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Your Library" image="books.vertical" catalog="system" selectedImage="books.vertical.fill" id="GnB-g7-g8Z"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="qGk-dx-3ZH">
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" barStyle="black" largeTitles="YES" id="qGk-dx-3ZH">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -113,7 +154,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kma-92-QJO" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="search" id="NY6-f8-TMy"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Efb-G4-JqM">
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" barStyle="black" largeTitles="YES" id="Efb-G4-JqM">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -136,7 +177,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Fn8-xM-g4D">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="oDm-7Z-qnX" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" interfaceStyle="light" id="oDm-7Z-qnX" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="rKn-WF-MVf"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xzz-Bw-bVQ">
@@ -145,6 +186,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="standardAppearance" backgroundImageContentMode="center">
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tabBarAppearance>
                     </tabBar>
                     <connections>
                         <segue destination="oDY-cn-5Cr" kind="relationship" relationship="viewControllers" id="ffG-oY-vww"/>
