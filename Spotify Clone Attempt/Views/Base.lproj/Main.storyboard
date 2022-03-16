@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oDm-7Z-qnX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oDm-7Z-qnX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,7 +33,7 @@
             </objects>
             <point key="canvasLocation" x="20" y="812"/>
         </scene>
-        <!--Good Morning-->
+        <!--Home View Controller-->
         <scene sceneID="X8P-Cq-Fgn">
             <objects>
                 <viewController id="azI-Fp-Ijj" customClass="HomeViewController" customModule="Spotify_Clone_Attempt" customModuleProvider="target" sceneMemberID="viewController">
@@ -43,13 +43,13 @@
                         <viewLayoutGuide key="safeArea" id="EMP-9h-KdV"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Good Morning" id="qvL-ZW-2Nk"/>
+                    <navigationItem key="navigationItem" id="qvL-ZW-2Nk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FN0-Xt-Kbe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="10" y="1550"/>
         </scene>
-        <!--Your Library-->
+        <!--Library View Controller-->
         <scene sceneID="de2-qL-le0">
             <objects>
                 <viewController id="7i3-a3-Eb0" customClass="LibraryViewController" customModule="Spotify_Clone_Attempt" customModuleProvider="target" sceneMemberID="viewController">
@@ -59,7 +59,7 @@
                         <viewLayoutGuide key="safeArea" id="xV0-i5-qEo"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Your Library" id="ldc-pN-NES"/>
+                    <navigationItem key="navigationItem" id="ldc-pN-NES"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AJN-kj-r1t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

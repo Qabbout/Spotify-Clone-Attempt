@@ -11,6 +11,12 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        let navBarView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 30))
+
+        navBarView.backgroundColor = .red
+        navigationItem.titleView = navBarView
+
     }
 
 
