@@ -20,6 +20,8 @@
 		F7839B1927E0BF9C00C3111D /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7839B1827E0BF9C00C3111D /* LibraryViewController.swift */; };
 		F79B8E9F27E611C600D0FF57 /* RecentsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79B8E9D27E611C600D0FF57 /* RecentsCollectionViewCell.swift */; };
 		F79B8EA027E611C600D0FF57 /* RecentsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F79B8E9E27E611C600D0FF57 /* RecentsCollectionViewCell.xib */; };
+		F79B8EAC27E6238A00D0FF57 /* PlaylistsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79B8EAA27E6238A00D0FF57 /* PlaylistsTableViewCell.swift */; };
+		F79B8EAD27E6238A00D0FF57 /* PlaylistsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F79B8EAB27E6238A00D0FF57 /* PlaylistsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		F7839B1827E0BF9C00C3111D /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		F79B8E9D27E611C600D0FF57 /* RecentsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsCollectionViewCell.swift; sourceTree = "<group>"; };
 		F79B8E9E27E611C600D0FF57 /* RecentsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentsCollectionViewCell.xib; sourceTree = "<group>"; };
+		F79B8EAA27E6238A00D0FF57 /* PlaylistsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlaylistsTableViewCell.swift; path = "Spotify Clone Attempt/Controllers/PlaylistsTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		F79B8EAB27E6238A00D0FF57 /* PlaylistsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PlaylistsTableViewCell.xib; path = "Spotify Clone Attempt/Controllers/PlaylistsTableViewCell.xib"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 		F7839B1427E0BBE500C3111D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F79B8EA527E622C700D0FF57 /* PlaylistsTableView */,
 				F79B8E9C27E6117B00D0FF57 /* RecentsCollectionView */,
 				F7839B0A27E0A85200C3111D /* LaunchScreen.storyboard */,
 				F7839B0527E0A85000C3111D /* Main.storyboard */,
@@ -118,6 +123,15 @@
 				F79B8E9E27E611C600D0FF57 /* RecentsCollectionViewCell.xib */,
 			);
 			path = RecentsCollectionView;
+			sourceTree = "<group>";
+		};
+		F79B8EA527E622C700D0FF57 /* PlaylistsTableView */ = {
+			isa = PBXGroup;
+			children = (
+				F79B8EAA27E6238A00D0FF57 /* PlaylistsTableViewCell.swift */,
+				F79B8EAB27E6238A00D0FF57 /* PlaylistsTableViewCell.xib */,
+			);
+			path = PlaylistsTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F79B8EAD27E6238A00D0FF57 /* PlaylistsTableViewCell.xib in Resources */,
 				F7839B0C27E0A85200C3111D /* LaunchScreen.storyboard in Resources */,
 				F79B8EA027E611C600D0FF57 /* RecentsCollectionViewCell.xib in Resources */,
 				F7839B0927E0A85200C3111D /* Assets.xcassets in Resources */,
@@ -199,6 +214,7 @@
 				F75089CC27E54D8A008A5022 /* Song.swift in Sources */,
 				F79B8E9F27E611C600D0FF57 /* RecentsCollectionViewCell.swift in Sources */,
 				F7839B1727E0BF4F00C3111D /* SearchViewController.swift in Sources */,
+				F79B8EAC27E6238A00D0FF57 /* PlaylistsTableViewCell.swift in Sources */,
 				F75089CA27E54C35008A5022 /* Album.swift in Sources */,
 				F7839B0227E0A85000C3111D /* SceneDelegate.swift in Sources */,
 			);

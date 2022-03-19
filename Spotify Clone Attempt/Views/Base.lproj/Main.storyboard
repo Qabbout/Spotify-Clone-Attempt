@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -42,11 +41,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCh-P8-aHF">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCh-P8-aHF">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1BI-Qo-DpJ" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="3408"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B3F-od-AIR">
                                                 <rect key="frame" x="10" y="10" width="394" height="50"/>
@@ -101,30 +100,51 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="recent" id="FSf-H1-y3l" customClass="RecentsCollectionViewCell" customModule="Spotify_Clone_Attempt" customModuleProvider="target">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="recent" id="UR2-qb-aiR">
                                                         <rect key="frame" x="0.0" y="0.0" width="128" height="180"/>
                                                         <autoresizingMask key="autoresizingMask"/>
-                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ndN-jN-b4w">
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1oK-Cx-c4f">
                                                             <rect key="frame" x="0.0" y="0.0" width="128" height="180"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </collectionViewCellContentView>
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
+                                            <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="t3n-Tt-8v8">
+                                                <rect key="frame" x="0.0" y="248" width="414" height="3150"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="3160" id="5hb-Wr-pfN"/>
+                                                </constraints>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="playlist" id="1UW-cJ-dm9">
+                                                        <rect key="frame" x="0.0" y="44.5" width="414" height="44"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1UW-cJ-dm9" id="fP2-f5-VkX">
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </tableViewCellContentView>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                                <sections/>
+                                            </tableView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="t3n-Tt-8v8" secondAttribute="bottom" id="BHM-Ws-EAv"/>
                                             <constraint firstItem="B3F-od-AIR" firstAttribute="top" secondItem="1BI-Qo-DpJ" secondAttribute="top" constant="10" id="LEw-41-Ubf"/>
+                                            <constraint firstItem="t3n-Tt-8v8" firstAttribute="leading" secondItem="1BI-Qo-DpJ" secondAttribute="leading" id="MEh-8b-W13"/>
                                             <constraint firstItem="HuM-hH-S76" firstAttribute="top" secondItem="B3F-od-AIR" secondAttribute="bottom" constant="8" symbolic="YES" id="Uxu-FR-cvJ"/>
                                             <constraint firstItem="B3F-od-AIR" firstAttribute="leading" secondItem="1BI-Qo-DpJ" secondAttribute="leading" constant="10" id="fSU-Nt-zxG"/>
                                             <constraint firstAttribute="trailing" secondItem="B3F-od-AIR" secondAttribute="trailing" constant="10" id="g7o-hn-mTG"/>
                                             <constraint firstItem="HuM-hH-S76" firstAttribute="leading" secondItem="1BI-Qo-DpJ" secondAttribute="leading" id="iWy-vr-zCc"/>
-                                            <constraint firstAttribute="height" constant="1200" id="qkL-G9-z03"/>
+                                            <constraint firstAttribute="trailing" secondItem="t3n-Tt-8v8" secondAttribute="trailing" id="ifU-Sc-SGT"/>
+                                            <constraint firstItem="t3n-Tt-8v8" firstAttribute="top" secondItem="HuM-hH-S76" secondAttribute="bottom" id="pwn-IY-4fx"/>
                                             <constraint firstAttribute="trailing" secondItem="HuM-hH-S76" secondAttribute="trailing" id="tR2-l7-f3s"/>
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="tintColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="1BI-Qo-DpJ" firstAttribute="width" secondItem="tCh-P8-aHF" secondAttribute="width" id="4Ew-lP-4LV"/>
                                     <constraint firstItem="1BI-Qo-DpJ" firstAttribute="leading" secondItem="tCh-P8-aHF" secondAttribute="leading" id="cs6-8a-k1f"/>
@@ -147,6 +167,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="qvL-ZW-2Nk"/>
                     <connections>
+                        <outlet property="playlistsTableView" destination="t3n-Tt-8v8" id="kHw-kl-qWU"/>
                         <outlet property="recentsCollectionView" destination="HuM-hH-S76" id="Je6-5p-XFF"/>
                     </connections>
                 </viewController>
@@ -327,8 +348,5 @@
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>
