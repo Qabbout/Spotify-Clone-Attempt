@@ -22,6 +22,7 @@
 		F79B8EA027E611C600D0FF57 /* RecentsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F79B8E9E27E611C600D0FF57 /* RecentsCollectionViewCell.xib */; };
 		F79B8EAC27E6238A00D0FF57 /* PlaylistsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79B8EAA27E6238A00D0FF57 /* PlaylistsTableViewCell.swift */; };
 		F79B8EAD27E6238A00D0FF57 /* PlaylistsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F79B8EAB27E6238A00D0FF57 /* PlaylistsTableViewCell.xib */; };
+		F7F2CEC727E6452A004D69BF /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F2CEC627E6452A004D69BF /* CustomTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		F79B8E9E27E611C600D0FF57 /* RecentsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentsCollectionViewCell.xib; sourceTree = "<group>"; };
 		F79B8EAA27E6238A00D0FF57 /* PlaylistsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlaylistsTableViewCell.swift; path = "Spotify Clone Attempt/Controllers/PlaylistsTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		F79B8EAB27E6238A00D0FF57 /* PlaylistsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PlaylistsTableViewCell.xib; path = "Spotify Clone Attempt/Controllers/PlaylistsTableViewCell.xib"; sourceTree = SOURCE_ROOT; };
+		F7F2CEC627E6452A004D69BF /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				F7839B0327E0A85000C3111D /* HomeViewController.swift */,
 				F7839B1627E0BF4F00C3111D /* SearchViewController.swift */,
 				F7839B1827E0BF9C00C3111D /* LibraryViewController.swift */,
+				F7F2CEC627E6452A004D69BF /* CustomTabBarController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				F7839B1927E0BF9C00C3111D /* LibraryViewController.swift in Sources */,
 				F7839B0027E0A85000C3111D /* AppDelegate.swift in Sources */,
 				F75089CC27E54D8A008A5022 /* Song.swift in Sources */,
+				F7F2CEC727E6452A004D69BF /* CustomTabBarController.swift in Sources */,
 				F79B8E9F27E611C600D0FF57 /* RecentsCollectionViewCell.swift in Sources */,
 				F7839B1727E0BF4F00C3111D /* SearchViewController.swift in Sources */,
 				F79B8EAC27E6238A00D0FF57 /* PlaylistsTableViewCell.swift in Sources */,
