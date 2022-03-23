@@ -231,7 +231,28 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="57l-JJ-X6D" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="2242"/>
+                                        <subviews>
+                                            <searchBar clipsSubviews="YES" contentMode="redraw" barStyle="black" placeholder="Search Artitst, Songs, Playlists .." showsScopeBar="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AfF-73-LRp">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="XFt-xT-dST"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                                <scopeButtonTitles>
+                                                    <string>Title</string>
+                                                    <string>Title</string>
+                                                </scopeButtonTitles>
+                                            </searchBar>
+                                        </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="AfF-73-LRp" firstAttribute="leading" secondItem="57l-JJ-X6D" secondAttribute="leading" id="8cE-uO-tf2"/>
+                                            <constraint firstAttribute="trailing" secondItem="AfF-73-LRp" secondAttribute="trailing" id="pn8-ZA-fij"/>
+                                            <constraint firstItem="AfF-73-LRp" firstAttribute="top" secondItem="57l-JJ-X6D" secondAttribute="top" id="uZ7-wB-TPC"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -255,11 +276,14 @@
                             <constraint firstItem="4Hz-uK-Vgf" firstAttribute="trailing" secondItem="r6c-Xc-cDn" secondAttribute="trailing" id="r7n-I4-rQk"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="VVk-wf-taI"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="VVk-wf-taI"/>
+                    <connections>
+                        <outlet property="searchBar" destination="AfF-73-LRp" id="7j3-IY-cU4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vdA-5N-pj1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="929" y="1550"/>
+            <point key="canvasLocation" x="928.98550724637687" y="1549.5535714285713"/>
         </scene>
         <!--Your Library-->
         <scene sceneID="qvi-LU-xtg">
