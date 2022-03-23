@@ -10,6 +10,8 @@
 		F75089C827E54BA6008A5022 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75089C727E54BA6008A5022 /* Artist.swift */; };
 		F75089CA27E54C35008A5022 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75089C927E54C35008A5022 /* Album.swift */; };
 		F75089CC27E54D8A008A5022 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75089CB27E54D8A008A5022 /* Song.swift */; };
+		F7796E4B27EBCD2300B40354 /* GenresCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7796E4927EBCD2300B40354 /* GenresCollectionViewHeader.swift */; };
+		F7796E4C27EBCD2300B40354 /* GenresCollectionViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7796E4A27EBCD2300B40354 /* GenresCollectionViewHeader.xib */; };
 		F7839B0027E0A85000C3111D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7839AFF27E0A85000C3111D /* AppDelegate.swift */; };
 		F7839B0227E0A85000C3111D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7839B0127E0A85000C3111D /* SceneDelegate.swift */; };
 		F7839B0427E0A85000C3111D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7839B0327E0A85000C3111D /* HomeViewController.swift */; };
@@ -29,6 +31,8 @@
 		F75089C727E54BA6008A5022 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		F75089C927E54C35008A5022 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		F75089CB27E54D8A008A5022 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		F7796E4927EBCD2300B40354 /* GenresCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresCollectionViewHeader.swift; sourceTree = "<group>"; };
+		F7796E4A27EBCD2300B40354 /* GenresCollectionViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenresCollectionViewHeader.xib; sourceTree = "<group>"; };
 		F7839AFC27E0A85000C3111D /* Spotify Clone Attempt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spotify Clone Attempt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7839AFF27E0A85000C3111D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7839B0127E0A85000C3111D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +61,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F7796E4727EBCCB500B40354 /* GenresCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				F7796E4827EBCCC900B40354 /* GrenresCollectionViewHeader */,
+			);
+			path = GenresCollectionView;
+			sourceTree = "<group>";
+		};
+		F7796E4827EBCCC900B40354 /* GrenresCollectionViewHeader */ = {
+			isa = PBXGroup;
+			children = (
+				F7796E4927EBCD2300B40354 /* GenresCollectionViewHeader.swift */,
+				F7796E4A27EBCD2300B40354 /* GenresCollectionViewHeader.xib */,
+			);
+			path = GrenresCollectionViewHeader;
+			sourceTree = "<group>";
+		};
 		F7839AF327E0A84F00C3111D = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +121,7 @@
 		F7839B1427E0BBE500C3111D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F7796E4727EBCCB500B40354 /* GenresCollectionView */,
 				F79B8EA527E622C700D0FF57 /* PlaylistsTableView */,
 				F79B8E9C27E6117B00D0FF57 /* RecentsCollectionView */,
 				F7839B0A27E0A85200C3111D /* LaunchScreen.storyboard */,
@@ -196,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F79B8EAD27E6238A00D0FF57 /* PlaylistsTableViewCell.xib in Resources */,
+				F7796E4C27EBCD2300B40354 /* GenresCollectionViewHeader.xib in Resources */,
 				F7839B0C27E0A85200C3111D /* LaunchScreen.storyboard in Resources */,
 				F79B8EA027E611C600D0FF57 /* RecentsCollectionViewCell.xib in Resources */,
 				F7839B0927E0A85200C3111D /* Assets.xcassets in Resources */,
@@ -212,6 +235,7 @@
 			files = (
 				F75089C827E54BA6008A5022 /* Artist.swift in Sources */,
 				F7839B0427E0A85000C3111D /* HomeViewController.swift in Sources */,
+				F7796E4B27EBCD2300B40354 /* GenresCollectionViewHeader.swift in Sources */,
 				F7839B1927E0BF9C00C3111D /* LibraryViewController.swift in Sources */,
 				F7839B0027E0A85000C3111D /* AppDelegate.swift in Sources */,
 				F75089CC27E54D8A008A5022 /* Song.swift in Sources */,

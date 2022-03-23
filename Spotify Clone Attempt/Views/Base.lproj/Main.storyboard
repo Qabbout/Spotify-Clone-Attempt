@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -226,11 +227,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Hz-uK-Vgf">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Hz-uK-Vgf">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="57l-JJ-X6D" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2242"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="57l-JJ-X6D" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1042"/>
                                         <subviews>
                                             <searchBar clipsSubviews="YES" contentMode="redraw" barStyle="black" placeholder="Search Artitst, Songs, Playlists .." showsScopeBar="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AfF-73-LRp">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -246,12 +247,48 @@
                                                     <string>Title</string>
                                                 </scopeButtonTitles>
                                             </searchBar>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nFp-4f-aQO">
+                                                <rect key="frame" x="0.0" y="44" width="414" height="670"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="670" id="iWX-Im-rew"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="contentLayoutGuide" id="izq-0M-wMr"/>
+                                                <viewLayoutGuide key="frameLayoutGuide" id="R7D-o0-U5y"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dR6-nk-Co0">
+                                                    <size key="itemSize" width="160" height="76"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="30"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="20" minY="20" maxX="20" maxY="20"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="genre" id="kRI-KK-uKc">
+                                                        <rect key="frame" x="20" y="50" width="160" height="76"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rGO-96-rPe">
+                                                            <rect key="frame" x="0.0" y="0.0" width="160" height="76"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </collectionViewCellContentView>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="header" id="rLd-FP-bVq">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionReusableView>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="lES-yP-TTF" id="O5q-wa-wku"/>
+                                                    <outlet property="delegate" destination="lES-yP-TTF" id="2Ap-u7-mJ3"/>
+                                                </connections>
+                                            </collectionView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="AfF-73-LRp" firstAttribute="leading" secondItem="57l-JJ-X6D" secondAttribute="leading" id="8cE-uO-tf2"/>
-                                            <constraint firstAttribute="trailing" secondItem="AfF-73-LRp" secondAttribute="trailing" id="pn8-ZA-fij"/>
-                                            <constraint firstItem="AfF-73-LRp" firstAttribute="top" secondItem="57l-JJ-X6D" secondAttribute="top" id="uZ7-wB-TPC"/>
+                                            <constraint firstItem="nFp-4f-aQO" firstAttribute="leading" secondItem="57l-JJ-X6D" secondAttribute="leading" id="2QY-ty-J4q"/>
+                                            <constraint firstItem="AfF-73-LRp" firstAttribute="leading" secondItem="57l-JJ-X6D" secondAttribute="leading" symbolic="YES" id="8cE-uO-tf2"/>
+                                            <constraint firstItem="nFp-4f-aQO" firstAttribute="top" secondItem="AfF-73-LRp" secondAttribute="bottom" id="Qpz-i6-IhU"/>
+                                            <constraint firstAttribute="trailing" secondItem="AfF-73-LRp" secondAttribute="trailing" symbolic="YES" id="pn8-ZA-fij"/>
+                                            <constraint firstAttribute="trailing" secondItem="nFp-4f-aQO" secondAttribute="trailing" id="q6B-jj-gfi"/>
+                                            <constraint firstItem="AfF-73-LRp" firstAttribute="top" secondItem="57l-JJ-X6D" secondAttribute="top" symbolic="YES" id="uZ7-wB-TPC"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -259,6 +296,7 @@
                                 <constraints>
                                     <constraint firstItem="57l-JJ-X6D" firstAttribute="leading" secondItem="d1k-7o-106" secondAttribute="leading" id="6Oq-BQ-XKK"/>
                                     <constraint firstItem="57l-JJ-X6D" firstAttribute="trailing" secondItem="d1k-7o-106" secondAttribute="trailing" id="CKF-bb-Zok"/>
+                                    <constraint firstItem="57l-JJ-X6D" firstAttribute="height" secondItem="4Hz-uK-Vgf" secondAttribute="height" multiplier="1.16295" id="Jxe-0V-MpM"/>
                                     <constraint firstItem="57l-JJ-X6D" firstAttribute="top" secondItem="d1k-7o-106" secondAttribute="top" id="YnE-4n-Zf2"/>
                                     <constraint firstItem="57l-JJ-X6D" firstAttribute="bottom" secondItem="d1k-7o-106" secondAttribute="bottom" id="iqq-s4-s5A"/>
                                 </constraints>
@@ -278,6 +316,7 @@
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="VVk-wf-taI"/>
                     <connections>
+                        <outlet property="genresCollectionView" destination="nFp-4f-aQO" id="ztR-hN-vmA"/>
                         <outlet property="searchBar" destination="AfF-73-LRp" id="7j3-IY-cU4"/>
                     </connections>
                 </viewController>
@@ -372,5 +411,8 @@
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
