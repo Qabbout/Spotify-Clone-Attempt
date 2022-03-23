@@ -69,22 +69,33 @@ class CustomTabBarController: UITabBarController {
 
 
 
+        let songNameLabelView = UIView()
         let songNameLabel = UILabel()
         songNameLabel.textColor = .white
         songNameLabel.font = UIFont.systemFont(ofSize: 13, weight: .heavy)
         songNameLabel.text = "Save your tears"
+        songNameLabelView.addSubview(songNameLabel)
+        songNameLabel.translatesAutoresizingMaskIntoConstraints = false
+        songNameLabel.bottomAnchor.constraint(equalTo: songNameLabelView.bottomAnchor).isActive = true
+        songNameLabel.leadingAnchor.constraint(equalTo: songNameLabelView.leadingAnchor).isActive = true
 
 
 
 
+        let songArtistLabelView = UIView()
         let songArtistLabel = UILabel()
         songArtistLabel.textColor = .white
         songArtistLabel.font = UIFont.systemFont(ofSize: 11, weight: .bold)
         songArtistLabel.text = "The Weeknd"
 
+        songArtistLabelView.addSubview(songArtistLabel)
+        songArtistLabel.translatesAutoresizingMaskIntoConstraints = false
+        songArtistLabel.topAnchor.constraint(equalTo: songArtistLabelView.topAnchor, constant:  5).isActive = true
+        songArtistLabel.leadingAnchor.constraint(equalTo: songArtistLabelView.leadingAnchor).isActive = true
 
-        songStackView.addArrangedSubview(songNameLabel)
-        songStackView.addArrangedSubview(songArtistLabel)
+
+        songStackView.addArrangedSubview(songNameLabelView)
+        songStackView.addArrangedSubview(songArtistLabelView)
 
         playerStackView.addArrangedSubview(songStackView)
 
