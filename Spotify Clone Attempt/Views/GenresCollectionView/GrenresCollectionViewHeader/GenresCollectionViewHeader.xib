@@ -9,12 +9,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="header" id="U6b-Vx-4bR" customClass="GenresCollectionViewHeader" customModule="Spotify_Clone_Attempt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="088-nf-f2T">
-                    <rect key="frame" x="10" y="10" width="43.5" height="30"/>
+                    <rect key="frame" x="20" y="9.5" width="43.5" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -23,10 +23,12 @@
             <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
             <color key="backgroundColor" red="0.091227047150000004" green="0.078244276340000002" blue="0.07103329152" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="088-nf-f2T" secondAttribute="bottom" constant="10" id="ST8-dh-WjK"/>
-                <constraint firstItem="088-nf-f2T" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="br3-Py-GJm"/>
-                <constraint firstItem="088-nf-f2T" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="10" id="vYJ-ls-hVZ"/>
+                <constraint firstItem="088-nf-f2T" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="20" id="br3-Py-GJm"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="088-nf-f2T" secondAttribute="bottom" id="wJy-Mb-GBP"/>
             </constraints>
+            <connections>
+                <outlet property="label" destination="088-nf-f2T" id="6Oh-6k-bgm"/>
+            </connections>
             <point key="canvasLocation" x="139" y="80"/>
         </collectionReusableView>
     </objects>

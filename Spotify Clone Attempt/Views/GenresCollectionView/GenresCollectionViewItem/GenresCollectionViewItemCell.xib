@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GenresCollectionViewItemCell" customModule="Spotify_Clone_Attempt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="76"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="76"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover1" translatesAutoresizingMaskIntoConstraints="NO" id="Lgj-fR-cVH">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="76"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pop" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Raz-rQ-ImB">
+                        <rect key="frame" x="10" y="10" width="35.5" height="22.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="highlightedColor" red="0.091227047150000004" green="0.078244276340000002" blue="0.07103329152" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="shadowColor" red="0.091227047150000004" green="0.078244276340000002" blue="0.07103329152" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <size key="shadowOffset" width="1" height="1"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Lgj-fR-cVH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9pd-bB-ytJ"/>
+                <constraint firstAttribute="bottom" secondItem="Lgj-fR-cVH" secondAttribute="bottom" id="KJc-5g-DkI"/>
+                <constraint firstItem="Raz-rQ-ImB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Kuo-nJ-bk3"/>
+                <constraint firstAttribute="trailing" secondItem="Lgj-fR-cVH" secondAttribute="trailing" id="RGL-ot-a0M"/>
+                <constraint firstItem="Lgj-fR-cVH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="YDW-dP-GkR"/>
+                <constraint firstItem="Raz-rQ-ImB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="ZAV-S0-jhf"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="17"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cover1" width="640" height="640"/>
+    </resources>
+</document>

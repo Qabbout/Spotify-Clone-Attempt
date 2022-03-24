@@ -8,8 +8,8 @@
 import UIKit
 
 class SearchViewController: UIViewController, UISearchBarDelegate {
-    var addedFirstHeader: Bool = false
-    var addedSecondHeader: Bool = false
+
+
 
 
     @IBOutlet weak var genresCollectionView: UICollectionView!
@@ -20,7 +20,9 @@ class SearchViewController: UIViewController, UISearchBarDelegate {
         searchBar.delegate = self
 
         let headerCellNib = UINib(nibName: "GenresCollectionViewHeader", bundle: nil)
-        self.genresCollectionView.register(headerCellNib, forCellWithReuseIdentifier: "header")
+        let itemCellNib = UINib(nibName: "GenresCollectionViewItemCell", bundle: nil)
+        self.genresCollectionView.register(headerCellNib, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "header")
+        self.genresCollectionView.register(itemCellNib, forCellWithReuseIdentifier: "genre")
     }
 
 
@@ -30,10 +32,15 @@ class SearchViewController: UIViewController, UISearchBarDelegate {
 
 extension SearchViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        2
+        switch section {
+            case 0:
+                return 4
+            default:
+                return 20
+        }
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        5
+        2
     }
 
 
@@ -45,23 +52,22 @@ extension SearchViewController: UICollectionViewDelegate, UICollectionViewDataSo
     }
 
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let headerCell = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "header", for: indexPath)
-        let headerView = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 40))
-        headerCell.addSubview(headerView)
+        let headerCell = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "header", for: indexPath) as! GenresCollectionViewHeader
 
 
-        if indexPath.section == 0 && addedFirstHeader == false {
-            addedFirstHeader = true
-            headerView.text = "Your genres"
+        if indexPath.section == 0{
+
+
+            headerCell.label.text = "Your genres"
             return headerCell
         }
-        else if indexPath.section == 2 && addedSecondHeader == false {
-            addedSecondHeader = true
-            headerView.text = "Discover"
+        else if indexPath.section == 1 {
+
+            headerCell.label.text = "Discover all genres"
             return headerCell
         }
         else {
-            headerView.frame = CGRect.zero
+            headerCell.frame = CGRect.zero
             return headerCell
 
         }
