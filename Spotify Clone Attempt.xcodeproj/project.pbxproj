@@ -35,6 +35,7 @@
 		F75089CB27E54D8A008A5022 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		F776AEE527ECA7AA00A461F0 /* GenresCollectionViewItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresCollectionViewItemCell.swift; sourceTree = "<group>"; };
 		F776AEE627ECA7AA00A461F0 /* GenresCollectionViewItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenresCollectionViewItemCell.xib; sourceTree = "<group>"; };
+		F776AEE927ECABAC00A461F0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F7796E4927EBCD2300B40354 /* GenresCollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresCollectionViewHeader.swift; sourceTree = "<group>"; };
 		F7796E4A27EBCD2300B40354 /* GenresCollectionViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenresCollectionViewHeader.xib; sourceTree = "<group>"; };
 		F7839AFC27E0A85000C3111D /* Spotify Clone Attempt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spotify Clone Attempt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +96,7 @@
 		F7839AF327E0A84F00C3111D = {
 			isa = PBXGroup;
 			children = (
+				F776AEE927ECABAC00A461F0 /* README.md */,
 				F7839AFE27E0A85000C3111D /* Spotify Clone Attempt */,
 				F7839AFD27E0A85000C3111D /* Products */,
 			);
